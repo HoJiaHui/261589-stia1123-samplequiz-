@@ -1,0 +1,26 @@
+package JavaThread;
+
+import javax.swing.*;
+
+public class GUI {
+
+
+    private JFrame frame;
+
+    public GUI() {
+        frame=new JFrame("Hello World");
+        frame.setSize(400, 300);
+        frame.setLayout(null);
+        frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+
+        JButton button = new JButton("CLICK");
+        button.setBounds(130,100,100,40);
+        frame.add(button);
+    }
+
+    public static void main(String[] args) {
+
+        GUI gui = new GUI();
+    }
+}
